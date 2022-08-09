@@ -26,7 +26,9 @@ public class BasicCoreProgram {
                 System.out.println("Tails " + tail);
                 System.out.println("Percentage of Head " + percenthead);
                 System.out.println("Percentage of tail " + percenttail);
+
             }
+            break;
         }
 
     }
@@ -55,6 +57,18 @@ public class BasicCoreProgram {
              poweroftwo = 2 * poweroftwo;
          }
     }
+    public void harmonicNumber(){
+        Scanner ha = new Scanner(System.in);
+        System.out.println("Enter The number");
+        int num = ha.nextInt();
+        double sum = 0.0;
+
+        for (double i = 1; i <= num; i++) {
+            sum = sum + 1 / i;
+        }
+        System.out.println("Sum is " + sum);
+    }
+
     public static void main(String[] args) {
         System.out.println("Basic Core Program ");
         BasicCoreProgram basicCoreProgram = new BasicCoreProgram();
@@ -64,6 +78,7 @@ public class BasicCoreProgram {
         basicCoreProgram.leapYear();
         System.out.println("*********  Power Of Two Program **********");
         basicCoreProgram.powerOfTwo();
-        
+        System.out.println("*********  Harmoic Number Program **********");
+        basicCoreProgram.harmonicNumber();
     }
 }
