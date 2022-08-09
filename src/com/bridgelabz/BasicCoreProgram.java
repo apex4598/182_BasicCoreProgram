@@ -68,6 +68,17 @@ public class BasicCoreProgram {
         }
         System.out.println("Sum is " + sum);
     }
+    public void QuotientRemainder(){
+        Scanner q=new Scanner(System.in);
+        System.out.println("ENTER NUMBER AND DIVISIOR");
+        int num=q.nextInt();
+        int div=q.nextInt();
+
+        int Quotient=num/div;
+        System.out.println("Quotient is "+Quotient);
+        int Remainder=num%div;
+        System.out.println("Remainder is "+Remainder);
+    }
 
     public static void main(String[] args) {
         System.out.println("Basic Core Program ");
@@ -80,5 +91,7 @@ public class BasicCoreProgram {
         basicCoreProgram.powerOfTwo();
         System.out.println("*********  Harmoic Number Program **********");
         basicCoreProgram.harmonicNumber();
+        System.out.println("*********  QuotientRemainder Program **********");
+        basicCoreProgram.QuotientRemainder();
     }
 }
