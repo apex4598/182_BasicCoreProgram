@@ -3,7 +3,7 @@ package com.bridgelabz;
 import java.util.Scanner;
 
 public class BasicCoreProgram {
-    void flipCoin(){
+    public void flipCoin(){
         int head = 0;
         int tail = 0;
         Scanner obj = new Scanner(System.in);
@@ -29,12 +29,29 @@ public class BasicCoreProgram {
             }
         }
 
-}
+    }
+    public void leapYear(){
+        Scanner l = new Scanner(System.in);
+        System.out.println("Enter Year");
+        int year = l.nextInt();
+
+        if (year > 999 && year < 10000) { // remainder of year is equal to 0
+            if (year % 4 == 0) {
+                System.out.println("Leap year " + year);
+            } else {
+                System.out.println("Not a Leap year " + year);
+            }
+
+        }
+
+     }
     public static void main(String[] args) {
         System.out.println("Basic Core Program ");
         BasicCoreProgram basicCoreProgram = new BasicCoreProgram();
         System.out.println("*********  Flip Coin Program **********");
         basicCoreProgram.flipCoin();
+        System.out.println("*********  Leap Year Program **********");
+        basicCoreProgram.leapYear();
         
     }
 }
