@@ -33,6 +33,8 @@ public class BasicCoreProgram {
     public static void main(String[] args) {
         System.out.println("Basic Core Program ");
         BasicCoreProgram basicCoreProgram = new BasicCoreProgram();
+        System.out.println("*********  Flip Coin Program **********");
         basicCoreProgram.flipCoin();
+        
     }
 }
