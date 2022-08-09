@@ -45,6 +45,16 @@ public class BasicCoreProgram {
         }
 
      }
+    public void powerOfTwo(){
+         Scanner p = new Scanner(System.in);
+         System.out.println("Enter number");
+         int n = p.nextInt();
+         int poweroftwo = 1;
+         for (int i = 0; i < n; i++) {
+             System.out.println(i + " " + poweroftwo);
+             poweroftwo = 2 * poweroftwo;
+         }
+    }
     public static void main(String[] args) {
         System.out.println("Basic Core Program ");
         BasicCoreProgram basicCoreProgram = new BasicCoreProgram();
@@ -52,6 +62,8 @@ public class BasicCoreProgram {
         basicCoreProgram.flipCoin();
         System.out.println("*********  Leap Year Program **********");
         basicCoreProgram.leapYear();
+        System.out.println("*********  Power Of Two Program **********");
+        basicCoreProgram.powerOfTwo();
         
     }
 }
